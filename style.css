@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-color: #fff;
+}
+.render {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  width: 100%;
+}
+.card {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  height: 50vh;
+}
+.card:hover {
+  filter: drop-shadow(15px 15px 15px #0000007f);
+}
+.div {
+  height: 200px;
+  width: 200px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: transparent;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+#copied {
+  font-size: 30px;
+  font-family: "Zen Dots", cursive;
+}
+@media screen and (max-width: 767px) {
+  .render {
+    display: block;
+  }
+
+  #copied {
+    font-size: 40px;
+  }
+}
